@@ -12,7 +12,7 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class LoginViewController: UIViewController {
-    var ref: DatabaseReference = Database.database().reference()
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -31,12 +31,16 @@ class LoginViewController: UIViewController {
             present(alertController, animated: true, completion: nil)
         } else {
             Auth.auth().signIn(withEmail: self.emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+                let ref: DatabaseReference = Database.database().reference()
+                ref.child("Log").removeValue()
+                let today = self.getTodayString()
+                let username = self.emailTextField.text!.components(separatedBy: "@")[0]
                 if (error == nil) {
                     print("You have logged in")
-                    self.ref.child("logging").child("success").child(Auth.auth().currentUser!.uid).childByAutoId().setValue("LOGIN SUCCESSFUL: \(self.getTodayString())")
+                    ref.child("Log").child("\(today)").setValue("\(username): log in successful")
                     self.performSegue(withIdentifier: "loginMain", sender: nil)
                 } else {
-                    self.ref.child("logging").child("failure").child(self.emailTextField.text!).childByAutoId().setValue("LOGIN FAILED: \(self.getTodayString())")
+                    ref.child("Log").child("\(today)").setValue("\(username): login failed")
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -77,6 +81,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let ref: DatabaseReference = Database.database().reference()
+        ref.child("test").child("testing").setValue("it worked")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
