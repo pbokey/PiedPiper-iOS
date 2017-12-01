@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>132539334509-en4mitl669r9n0bij0kb7meom41t9ac0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.132539334509-en4mitl669r9n0bij0kb7meom41t9ac0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCdKq1La1VoCaMb0lJyXgG_fp1GkykoRlc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>132539334509</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pranavbokey.PiedPiper-iOS</string>
+	<key>PROJECT_ID</key>
+	<string>piedpiper-dc1fe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>piedpiper-dc1fe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:132539334509:ios:af1e2a6b10114977</string>
+	<key>DATABASE_URL</key>
+	<string>https://piedpiper-dc1fe.firebaseio.com</string>
+</dict>
+</plist>

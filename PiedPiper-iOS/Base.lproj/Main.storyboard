@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bkb-wW-TdU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="xvj-Pz-zSq">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bkb-wW-TdU" customClass="SplashScreenViewController" customModule="PiedPiper_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Lz-M1-cJE" customClass="SplashScreenView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="I6T-7Y-hiY">
+                                <rect key="frame" x="50" y="369" width="275" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN2-LS-g89">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="34"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButton:" destination="Bkb-wW-TdU" eventType="touchUpInside" id="Xxx-Fl-c7D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7X-w1-k7Z">
+                                        <rect key="frame" x="167.5" y="0.0" width="107.5" height="34"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerButton:" destination="Bkb-wW-TdU" eventType="touchUpInside" id="cjC-cf-fvJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pied-piper-logo-CEFC2E0237-seeklogo.com.png" translatesAutoresizingMaskIntoConstraints="NO" id="qU2-xF-PXg">
+                                <rect key="frame" x="50" y="58" width="275" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="jZ1-Vw-iCh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qU2-xF-PXg" firstAttribute="trailing" secondItem="I6T-7Y-hiY" secondAttribute="trailing" id="2qs-QM-bkf"/>
+                            <constraint firstItem="BHO-cw-6rB" firstAttribute="trailing" secondItem="I6T-7Y-hiY" secondAttribute="trailing" constant="50" id="DVF-oq-84f"/>
+                            <constraint firstItem="BHO-cw-6rB" firstAttribute="bottom" secondItem="I6T-7Y-hiY" secondAttribute="bottom" constant="264" id="Ohe-Sh-NHB"/>
+                            <constraint firstItem="I6T-7Y-hiY" firstAttribute="leading" secondItem="BHO-cw-6rB" secondAttribute="leading" constant="50" id="Pck-sy-Vx6"/>
+                            <constraint firstItem="qU2-xF-PXg" firstAttribute="top" secondItem="BHO-cw-6rB" secondAttribute="top" constant="38" id="XTz-UL-tP8"/>
+                            <constraint firstItem="qU2-xF-PXg" firstAttribute="leading" secondItem="I6T-7Y-hiY" secondAttribute="leading" id="Zxv-yk-piG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BHO-cw-6rB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="custom" identifier="login" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="mIV-XQ-etB"/>
+                        <segue destination="Pgh-VG-GP0" kind="custom" identifier="registerTest" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="UPA-n5-lRT"/>
+                        <segue destination="gpo-kL-E50" kind="custom" identifier="splashMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="iBc-za-e30"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmI-nC-W5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727" y="143"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="PiedPiper_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Ud0-Sn-LrK">
+                                <rect key="frame" x="50" y="70" width="275" height="247"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="zed-zE-2l9">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="160"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ovT-g3-6lI">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NS-F2-8Dm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zP2-TA-0kG">
+                                                        <rect key="frame" x="0.0" y="30" width="275" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="zP2-TA-0kG" secondAttribute="trailing" id="0GD-xs-HNi"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="oi9-bN-QRN">
+                                                <rect key="frame" x="0.0" y="100" width="275" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jk7-El-74x">
+                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gih-gi-qll">
+                                                        <rect key="frame" x="0.0" y="30" width="275" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Gih-gi-qll" secondAttribute="trailing" id="sOn-0M-AzV"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fce-gG-LIe">
+                                        <rect key="frame" x="0.0" y="213" width="275" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URd-Bz-Isi">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="34"/>
+                                                <color key="backgroundColor" red="0.18823529411764706" green="0.43137254901960786" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezt-aT-GYz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwp-6o-CVq">
+                                                <rect key="frame" x="140" y="0.0" width="135" height="34"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wt2-2t-hTv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ud0-Sn-LrK" secondAttribute="bottom" constant="350" id="Ofo-AC-qek"/>
+                            <constraint firstItem="Ud0-Sn-LrK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ZSo-xT-pKa"/>
+                            <constraint firstItem="Ud0-Sn-LrK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ecw-Bd-fw5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ud0-Sn-LrK" secondAttribute="trailing" constant="50" id="yzr-JV-oIb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="zP2-TA-0kG" id="mc5-Gp-xSr"/>
+                        <outlet property="passwordTextField" destination="Gih-gi-qll" id="oJ2-Ah-fH0"/>
+                        <segue destination="Bkb-wW-TdU" kind="custom" identifier="loginCancel" customClass="SegueFromLeft" customModule="PiedPiper_iOS" customModuleProvider="target" id="Wz9-bF-xMa"/>
+                        <segue destination="gpo-kL-E50" kind="custom" identifier="loginMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="adv-HS-bgN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="554"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="dx8-XV-U04">
+            <objects>
+                <viewController id="Pgh-VG-GP0" customClass="RegisterViewController" customModule="PiedPiper_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Fd-f7-1sI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="2rW-fK-0Vl">
+                                <rect key="frame" x="50" y="70" width="275" height="247"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="MWG-MR-3UQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="160"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Vws-FL-hDg">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlQ-mV-Ngt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G6U-bo-H4n">
+                                                        <rect key="frame" x="0.0" y="30" width="275" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="G6U-bo-H4n" secondAttribute="trailing" id="nyD-gJ-5XM"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hnT-Zd-rPi">
+                                                <rect key="frame" x="0.0" y="100" width="275" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fs-YN-9SR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUL-OW-Dev">
+                                                        <rect key="frame" x="0.0" y="30" width="275" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="bUL-OW-Dev" secondAttribute="trailing" id="4A6-Vt-DFe"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HWh-rY-QlW">
+                                        <rect key="frame" x="0.0" y="213" width="275" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU8-HB-pUy">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="34"/>
+                                                <color key="backgroundColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Register">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="register:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="I9R-q7-jGR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAn-Fh-KTs">
+                                                <rect key="frame" x="140" y="0.0" width="135" height="34"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goToSplash:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="Si8-i9-rBA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2rW-fK-0Vl" firstAttribute="top" secondItem="TdT-xF-nsU" secondAttribute="top" constant="50" id="ViK-Si-blA"/>
+                            <constraint firstItem="TdT-xF-nsU" firstAttribute="bottom" secondItem="2rW-fK-0Vl" secondAttribute="bottom" constant="350" id="cqd-Q4-kHq"/>
+                            <constraint firstItem="TdT-xF-nsU" firstAttribute="trailing" secondItem="2rW-fK-0Vl" secondAttribute="trailing" constant="50" id="x9I-V6-U6S"/>
+                            <constraint firstItem="2rW-fK-0Vl" firstAttribute="leading" secondItem="TdT-xF-nsU" secondAttribute="leading" constant="50" id="zcg-u0-4KW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TdT-xF-nsU"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="G6U-bo-H4n" id="tEf-bB-1Rb"/>
+                        <outlet property="passwordTextField" destination="bUL-OW-Dev" id="cSY-R8-8Kc"/>
+                        <segue destination="Bkb-wW-TdU" kind="custom" identifier="registerSplash" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="UQ6-Pz-yLe"/>
+                        <segue destination="gpo-kL-E50" kind="custom" identifier="registerMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="eqk-JV-Ivq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbU-8Q-vo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="-114"/>
+        </scene>
+        <!--Main Screen View Controller-->
+        <scene sceneID="ZsL-B7-uqz">
+            <objects>
+                <viewController id="gpo-kL-E50" customClass="MainScreenViewController" customModule="PiedPiper_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXz-r4-Bo3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-oc-vBi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="PiedPiper" id="1yN-rh-tLn"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="2AY-dH-6J7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVU-JZ-aeW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="View Rat Sightings">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="register:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="WJI-mY-vQl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46X-wv-9u8">
+                                        <rect key="frame" x="0.0" y="125" width="375" height="103.5"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="View Map">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="register:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="ehb-WP-gs3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSg-5f-PPH">
+                                        <rect key="frame" x="0.0" y="249.5" width="375" height="104"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Create Rat Sighting">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="register:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="5Q1-HJ-wXT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxa-Gw-wkz">
+                                        <rect key="frame" x="0.0" y="374.5" width="375" height="103.5"/>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="View Graph">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="register:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="Xgs-mb-Mvf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rD-s8-GHs">
+                                        <rect key="frame" x="0.0" y="499" width="375" height="104"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logout:" destination="gpo-kL-E50" eventType="touchUpInside" id="6vy-sl-IUX"/>
+                                            <action selector="register:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="GQq-ud-FmZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c9g-oc-vBi" firstAttribute="trailing" secondItem="ai6-x1-gEF" secondAttribute="trailing" id="Bj0-c6-uND"/>
+                            <constraint firstItem="ai6-x1-gEF" firstAttribute="bottom" secondItem="2AY-dH-6J7" secondAttribute="bottom" id="JZJ-6t-Jop"/>
+                            <constraint firstItem="c9g-oc-vBi" firstAttribute="leading" secondItem="ai6-x1-gEF" secondAttribute="leading" id="jyS-Xp-HCO"/>
+                            <constraint firstItem="c9g-oc-vBi" firstAttribute="top" secondItem="ai6-x1-gEF" secondAttribute="top" id="mfx-PE-sdZ"/>
+                            <constraint firstItem="2AY-dH-6J7" firstAttribute="leading" secondItem="ai6-x1-gEF" secondAttribute="leading" id="oDC-PG-2R7"/>
+                            <constraint firstItem="ai6-x1-gEF" firstAttribute="trailing" secondItem="2AY-dH-6J7" secondAttribute="trailing" id="u5d-6U-Pmv"/>
+                            <constraint firstItem="2AY-dH-6J7" firstAttribute="top" secondItem="c9g-oc-vBi" secondAttribute="bottom" id="ygk-T4-Yj2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ai6-x1-gEF"/>
+                    </view>
+                    <connections>
+                        <segue destination="Bkb-wW-TdU" kind="custom" identifier="logout" customClass="SegueFromLeft" customModule="PiedPiper_iOS" customModuleProvider="target" id="Iwc-PT-mBQ"/>
+                        <segue destination="Sby-IJ-gDX" kind="custom" identifier="mainToList" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="vSd-wa-UI3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRC-zF-mTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="142.57871064467767"/>
+        </scene>
+        <!--Sighting Map View-->
+        <scene sceneID="ks6-Xj-zbF">
+            <objects>
+                <viewController id="Sby-IJ-gDX" customClass="SightingMapView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vz3-d8-5cY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Zx-DH-Fbf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VOd-5E-jBT">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VOd-5E-jBT" id="zkE-Be-fiA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Zx-DH-Fbf" firstAttribute="bottom" secondItem="ZLM-nj-3nE" secondAttribute="bottom" id="RPL-Bq-PHi"/>
+                            <constraint firstItem="2Zx-DH-Fbf" firstAttribute="top" secondItem="ZLM-nj-3nE" secondAttribute="top" id="YhA-Ih-idN"/>
+                            <constraint firstAttribute="trailing" secondItem="2Zx-DH-Fbf" secondAttribute="trailing" id="cKP-id-wz2"/>
+                            <constraint firstItem="2Zx-DH-Fbf" firstAttribute="leading" secondItem="Vz3-d8-5cY" secondAttribute="leading" id="x7K-uz-vO6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZLM-nj-3nE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zga-0r-lsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863.2" y="-794.75262368815595"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pied-piper-logo-CEFC2E0237-seeklogo.com.png" width="200" height="193"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eqk-JV-Ivq"/>
+        <segue reference="Iwc-PT-mBQ"/>
+    </inferredMetricsTieBreakers>
+</document>

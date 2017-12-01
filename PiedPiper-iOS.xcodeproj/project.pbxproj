@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D674558EDA2506EEE4AFFD4 /* Pods_PiedPiper_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6F7A97F7B085A017D339AD /* Pods_PiedPiper_iOSTests.framework */; };
+		5B73BFD01FCF240A007B92B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFCF1FCF240A007B92B4 /* AppDelegate.swift */; };
+		5B73BFD21FCF240A007B92B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */; };
+		5B73BFD51FCF240A007B92B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B73BFD31FCF240A007B92B4 /* Main.storyboard */; };
+		5B73BFD71FCF240A007B92B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B73BFD61FCF240A007B92B4 /* Assets.xcassets */; };
+		5B73BFDA1FCF240A007B92B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B73BFD81FCF240A007B92B4 /* LaunchScreen.storyboard */; };
+		5B73BFE51FCF240A007B92B4 /* PiedPiper_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFE41FCF240A007B92B4 /* PiedPiper_iOSTests.swift */; };
+		5B73BFF01FCF240A007B92B4 /* PiedPiper_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFEF1FCF240A007B92B4 /* PiedPiper_iOSUITests.swift */; };
+		5B73BFFE1FCF246F007B92B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B73BFFD1FCF246F007B92B4 /* GoogleService-Info.plist */; };
+		5B73C0001FCF2C08007B92B4 /* SpashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFFF1FCF2C08007B92B4 /* SpashScreenViewController.swift */; };
+		5B73C0021FCF2D23007B92B4 /* pied-piper-logo-CEFC2E0237-seeklogo.com.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B73C0011FCF2D23007B92B4 /* pied-piper-logo-CEFC2E0237-seeklogo.com.png */; };
+		5B73C0051FCF3D12007B92B4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73C0041FCF3D12007B92B4 /* RegisterViewController.swift */; };
+		5B73C0071FCF4429007B92B4 /* SequeFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73C0061FCF4429007B92B4 /* SequeFromLeft.swift */; };
+		5BD1777A1FCF9FFD006104BC /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */; };
+		5BD1777C1FD1100F006104BC /* RatSightingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777B1FD1100F006104BC /* RatSightingList.swift */; };
+		5BD1777E1FD11039006104BC /* RatSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777D1FD11039006104BC /* RatSighting.swift */; };
+		D77C7848EED35B51D4FA138A /* Pods_PiedPiper_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944DB1AB6287BD81919867C3 /* Pods_PiedPiper_iOSUITests.framework */; };
+		F3469245FA06E65B55CA8B86 /* Pods_PiedPiper_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C56E9A85D6CB07A2C5F9CA /* Pods_PiedPiper_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B73BFE11FCF240A007B92B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B73BFC41FCF240A007B92B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B73BFCB1FCF240A007B92B4;
+			remoteInfo = "PiedPiper-iOS";
+		};
+		5B73BFEC1FCF240A007B92B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B73BFC41FCF240A007B92B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B73BFCB1FCF240A007B92B4;
+			remoteInfo = "PiedPiper-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27ADFF5D5AE325A04D88FE6E /* Pods-PiedPiper-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSUITests/Pods-PiedPiper-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E5941A93199EF83F0ED2BC6 /* Pods-PiedPiper-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSTests/Pods-PiedPiper-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B73BFCC1FCF240A007B92B4 /* PiedPiper-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PiedPiper-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B73BFCF1FCF240A007B92B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5B73BFD41FCF240A007B92B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B73BFD61FCF240A007B92B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B73BFD91FCF240A007B92B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B73BFDB1FCF240A007B92B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B73BFE01FCF240A007B92B4 /* PiedPiper-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PiedPiper-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B73BFE41FCF240A007B92B4 /* PiedPiper_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiedPiper_iOSTests.swift; sourceTree = "<group>"; };
+		5B73BFE61FCF240A007B92B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B73BFEB1FCF240A007B92B4 /* PiedPiper-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PiedPiper-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B73BFEF1FCF240A007B92B4 /* PiedPiper_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiedPiper_iOSUITests.swift; sourceTree = "<group>"; };
+		5B73BFF11FCF240A007B92B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B73BFFD1FCF246F007B92B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B73BFFF1FCF2C08007B92B4 /* SpashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashScreenViewController.swift; sourceTree = "<group>"; };
+		5B73C0011FCF2D23007B92B4 /* pied-piper-logo-CEFC2E0237-seeklogo.com.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pied-piper-logo-CEFC2E0237-seeklogo.com.png"; sourceTree = "<group>"; };
+		5B73C0041FCF3D12007B92B4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5B73C0061FCF4429007B92B4 /* SequeFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequeFromLeft.swift; sourceTree = "<group>"; };
+		5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		5BD1777B1FD1100F006104BC /* RatSightingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatSightingList.swift; sourceTree = "<group>"; };
+		5BD1777D1FD11039006104BC /* RatSighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatSighting.swift; sourceTree = "<group>"; };
+		944DB1AB6287BD81919867C3 /* Pods_PiedPiper_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiedPiper_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		972DF851CCD644C0E5B00971 /* Pods-PiedPiper-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSUITests/Pods-PiedPiper-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4C56E9A85D6CB07A2C5F9CA /* Pods_PiedPiper_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiedPiper_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C1BEE04CBF9F18B44A5311 /* Pods-PiedPiper-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSTests/Pods-PiedPiper-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D06428A334C420059D3FEEBE /* Pods-PiedPiper-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DC6F7A97F7B085A017D339AD /* Pods_PiedPiper_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiedPiper_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8CB02BC91C3779F97B3D6F /* Pods-PiedPiper-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B73BFC91FCF240A007B92B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3469245FA06E65B55CA8B86 /* Pods_PiedPiper_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B73BFDD1FCF240A007B92B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D674558EDA2506EEE4AFFD4 /* Pods_PiedPiper_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B73BFE81FCF240A007B92B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77C7848EED35B51D4FA138A /* Pods_PiedPiper_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22CE305D74D3B88AFE434747 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C56E9A85D6CB07A2C5F9CA /* Pods_PiedPiper_iOS.framework */,
+				DC6F7A97F7B085A017D339AD /* Pods_PiedPiper_iOSTests.framework */,
+				944DB1AB6287BD81919867C3 /* Pods_PiedPiper_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B73BFC31FCF240A007B92B4 = {
+			isa = PBXGroup;
+			children = (
+				5B73BFCE1FCF240A007B92B4 /* PiedPiper-iOS */,
+				5B73BFE31FCF240A007B92B4 /* PiedPiper-iOSTests */,
+				5B73BFEE1FCF240A007B92B4 /* PiedPiper-iOSUITests */,
+				5B73BFCD1FCF240A007B92B4 /* Products */,
+				8E061502F5EBB4FE6297AAD7 /* Pods */,
+				22CE305D74D3B88AFE434747 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B73BFCD1FCF240A007B92B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B73BFCC1FCF240A007B92B4 /* PiedPiper-iOS.app */,
+				5B73BFE01FCF240A007B92B4 /* PiedPiper-iOSTests.xctest */,
+				5B73BFEB1FCF240A007B92B4 /* PiedPiper-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B73BFCE1FCF240A007B92B4 /* PiedPiper-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5B73C0081FCF44A7007B92B4 /* Useless */,
+				5B73C0031FCF2D28007B92B4 /* Images */,
+				5B73BFCF1FCF240A007B92B4 /* AppDelegate.swift */,
+				5B73BFDB1FCF240A007B92B4 /* Info.plist */,
+				5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */,
+				5B73BFD31FCF240A007B92B4 /* Main.storyboard */,
+				5B73BFFF1FCF2C08007B92B4 /* SpashScreenViewController.swift */,
+				5B73C0041FCF3D12007B92B4 /* RegisterViewController.swift */,
+				5B73C0061FCF4429007B92B4 /* SequeFromLeft.swift */,
+				5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */,
+				5BD1777B1FD1100F006104BC /* RatSightingList.swift */,
+				5BD1777D1FD11039006104BC /* RatSighting.swift */,
+			);
+			path = "PiedPiper-iOS";
+			sourceTree = "<group>";
+		};
+		5B73BFE31FCF240A007B92B4 /* PiedPiper-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B73BFE41FCF240A007B92B4 /* PiedPiper_iOSTests.swift */,
+				5B73BFE61FCF240A007B92B4 /* Info.plist */,
+			);
+			path = "PiedPiper-iOSTests";
+			sourceTree = "<group>";
+		};
+		5B73BFEE1FCF240A007B92B4 /* PiedPiper-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B73BFEF1FCF240A007B92B4 /* PiedPiper_iOSUITests.swift */,
+				5B73BFF11FCF240A007B92B4 /* Info.plist */,
+			);
+			path = "PiedPiper-iOSUITests";
+			sourceTree = "<group>";
+		};
+		5B73C0031FCF2D28007B92B4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5B73C0011FCF2D23007B92B4 /* pied-piper-logo-CEFC2E0237-seeklogo.com.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		5B73C0081FCF44A7007B92B4 /* Useless */ = {
+			isa = PBXGroup;
+			children = (
+				5B73BFD61FCF240A007B92B4 /* Assets.xcassets */,
+				5B73BFFD1FCF246F007B92B4 /* GoogleService-Info.plist */,
+				5B73BFD81FCF240A007B92B4 /* LaunchScreen.storyboard */,
+			);
+			path = Useless;
+			sourceTree = "<group>";
+		};
+		8E061502F5EBB4FE6297AAD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC8CB02BC91C3779F97B3D6F /* Pods-PiedPiper-iOS.debug.xcconfig */,
+				D06428A334C420059D3FEEBE /* Pods-PiedPiper-iOS.release.xcconfig */,
+				A7C1BEE04CBF9F18B44A5311 /* Pods-PiedPiper-iOSTests.debug.xcconfig */,
+				4E5941A93199EF83F0ED2BC6 /* Pods-PiedPiper-iOSTests.release.xcconfig */,
+				27ADFF5D5AE325A04D88FE6E /* Pods-PiedPiper-iOSUITests.debug.xcconfig */,
+				972DF851CCD644C0E5B00971 /* Pods-PiedPiper-iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B73BFCB1FCF240A007B92B4 /* PiedPiper-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B73BFF41FCF240A007B92B4 /* Build configuration list for PBXNativeTarget "PiedPiper-iOS" */;
+			buildPhases = (
+				AC6AB8C71282DF7A72DF2A8F /* [CP] Check Pods Manifest.lock */,
+				5B73BFC81FCF240A007B92B4 /* Sources */,
+				5B73BFC91FCF240A007B92B4 /* Frameworks */,
+				5B73BFCA1FCF240A007B92B4 /* Resources */,
+				5C542CC685D648E575FC797A /* [CP] Embed Pods Frameworks */,
+				9FB34B9FACDAA6D83CDCE9A7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PiedPiper-iOS";
+			productName = "PiedPiper-iOS";
+			productReference = 5B73BFCC1FCF240A007B92B4 /* PiedPiper-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B73BFDF1FCF240A007B92B4 /* PiedPiper-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B73BFF71FCF240A007B92B4 /* Build configuration list for PBXNativeTarget "PiedPiper-iOSTests" */;
+			buildPhases = (
+				4B14E69616CE7294272C9156 /* [CP] Check Pods Manifest.lock */,
+				5B73BFDC1FCF240A007B92B4 /* Sources */,
+				5B73BFDD1FCF240A007B92B4 /* Frameworks */,
+				5B73BFDE1FCF240A007B92B4 /* Resources */,
+				C093B95F2DE6A91236CF7DC7 /* [CP] Embed Pods Frameworks */,
+				7E534BA67259B1A2C9BD36B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B73BFE21FCF240A007B92B4 /* PBXTargetDependency */,
+			);
+			name = "PiedPiper-iOSTests";
+			productName = "PiedPiper-iOSTests";
+			productReference = 5B73BFE01FCF240A007B92B4 /* PiedPiper-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B73BFEA1FCF240A007B92B4 /* PiedPiper-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B73BFFA1FCF240A007B92B4 /* Build configuration list for PBXNativeTarget "PiedPiper-iOSUITests" */;
+			buildPhases = (
+				34E4FFA6D72043549FBB84D2 /* [CP] Check Pods Manifest.lock */,
+				5B73BFE71FCF240A007B92B4 /* Sources */,
+				5B73BFE81FCF240A007B92B4 /* Frameworks */,
+				5B73BFE91FCF240A007B92B4 /* Resources */,
+				9C68CE6F5E17F4A519E15796 /* [CP] Embed Pods Frameworks */,
+				77C4193BDA1D245C3C128158 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B73BFED1FCF240A007B92B4 /* PBXTargetDependency */,
+			);
+			name = "PiedPiper-iOSUITests";
+			productName = "PiedPiper-iOSUITests";
+			productReference = 5B73BFEB1FCF240A007B92B4 /* PiedPiper-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B73BFC41FCF240A007B92B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Pranav Bokey";
+				TargetAttributes = {
+					5B73BFCB1FCF240A007B92B4 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					5B73BFDF1FCF240A007B92B4 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B73BFCB1FCF240A007B92B4;
+					};
+					5B73BFEA1FCF240A007B92B4 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B73BFCB1FCF240A007B92B4;
+					};
+				};
+			};
+			buildConfigurationList = 5B73BFC71FCF240A007B92B4 /* Build configuration list for PBXProject "PiedPiper-iOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B73BFC31FCF240A007B92B4;
+			productRefGroup = 5B73BFCD1FCF240A007B92B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B73BFCB1FCF240A007B92B4 /* PiedPiper-iOS */,
+				5B73BFDF1FCF240A007B92B4 /* PiedPiper-iOSTests */,
+				5B73BFEA1FCF240A007B92B4 /* PiedPiper-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B73BFCA1FCF240A007B92B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B73BFDA1FCF240A007B92B4 /* LaunchScreen.storyboard in Resources */,
+				5B73BFFE1FCF246F007B92B4 /* GoogleService-Info.plist in Resources */,
+				5B73BFD71FCF240A007B92B4 /* Assets.xcassets in Resources */,
+				5B73C0021FCF2D23007B92B4 /* pied-piper-logo-CEFC2E0237-seeklogo.com.png in Resources */,
+				5B73BFD51FCF240A007B92B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B73BFDE1FCF240A007B92B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B73BFE91FCF240A007B92B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34E4FFA6D72043549FBB84D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PiedPiper-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B14E69616CE7294272C9156 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PiedPiper-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C542CC685D648E575FC797A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77C4193BDA1D245C3C128158 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOSUITests/Pods-PiedPiper-iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E534BA67259B1A2C9BD36B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOSTests/Pods-PiedPiper-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C68CE6F5E17F4A519E15796 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOSUITests/Pods-PiedPiper-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB34B9FACDAA6D83CDCE9A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC6AB8C71282DF7A72DF2A8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PiedPiper-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C093B95F2DE6A91236CF7DC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOSTests/Pods-PiedPiper-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B73BFC81FCF240A007B92B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD1777E1FD11039006104BC /* RatSighting.swift in Sources */,
+				5B73BFD21FCF240A007B92B4 /* LoginViewController.swift in Sources */,
+				5B73BFD01FCF240A007B92B4 /* AppDelegate.swift in Sources */,
+				5B73C0001FCF2C08007B92B4 /* SpashScreenViewController.swift in Sources */,
+				5B73C0051FCF3D12007B92B4 /* RegisterViewController.swift in Sources */,
+				5B73C0071FCF4429007B92B4 /* SequeFromLeft.swift in Sources */,
+				5BD1777A1FCF9FFD006104BC /* MainScreenViewController.swift in Sources */,
+				5BD1777C1FD1100F006104BC /* RatSightingList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B73BFDC1FCF240A007B92B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B73BFE51FCF240A007B92B4 /* PiedPiper_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B73BFE71FCF240A007B92B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B73BFF01FCF240A007B92B4 /* PiedPiper_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B73BFE21FCF240A007B92B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B73BFCB1FCF240A007B92B4 /* PiedPiper-iOS */;
+			targetProxy = 5B73BFE11FCF240A007B92B4 /* PBXContainerItemProxy */;
+		};
+		5B73BFED1FCF240A007B92B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B73BFCB1FCF240A007B92B4 /* PiedPiper-iOS */;
+			targetProxy = 5B73BFEC1FCF240A007B92B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B73BFD31FCF240A007B92B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B73BFD41FCF240A007B92B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B73BFD81FCF240A007B92B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B73BFD91FCF240A007B92B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B73BFF21FCF240A007B92B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B73BFF31FCF240A007B92B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B73BFF51FCF240A007B92B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8CB02BC91C3779F97B3D6F /* Pods-PiedPiper-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QQZM4A6V6;
+				INFOPLIST_FILE = "PiedPiper-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pranavbokey.PiedPiper-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B73BFF61FCF240A007B92B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D06428A334C420059D3FEEBE /* Pods-PiedPiper-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QQZM4A6V6;
+				INFOPLIST_FILE = "PiedPiper-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pranavbokey.PiedPiper-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B73BFF81FCF240A007B92B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7C1BEE04CBF9F18B44A5311 /* Pods-PiedPiper-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QQZM4A6V6;
+				INFOPLIST_FILE = "PiedPiper-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pranavbokey.PiedPiper-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiedPiper-iOS.app/PiedPiper-iOS";
+			};
+			name = Debug;
+		};
+		5B73BFF91FCF240A007B92B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5941A93199EF83F0ED2BC6 /* Pods-PiedPiper-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QQZM4A6V6;
+				INFOPLIST_FILE = "PiedPiper-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pranavbokey.PiedPiper-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiedPiper-iOS.app/PiedPiper-iOS";
+			};
+			name = Release;
+		};
+		5B73BFFB1FCF240A007B92B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27ADFF5D5AE325A04D88FE6E /* Pods-PiedPiper-iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QQZM4A6V6;
+				INFOPLIST_FILE = "PiedPiper-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pranavbokey.PiedPiper-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PiedPiper-iOS";
+			};
+			name = Debug;
+		};
+		5B73BFFC1FCF240A007B92B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972DF851CCD644C0E5B00971 /* Pods-PiedPiper-iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QQZM4A6V6;
+				INFOPLIST_FILE = "PiedPiper-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pranavbokey.PiedPiper-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PiedPiper-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B73BFC71FCF240A007B92B4 /* Build configuration list for PBXProject "PiedPiper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B73BFF21FCF240A007B92B4 /* Debug */,
+				5B73BFF31FCF240A007B92B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B73BFF41FCF240A007B92B4 /* Build configuration list for PBXNativeTarget "PiedPiper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B73BFF51FCF240A007B92B4 /* Debug */,
+				5B73BFF61FCF240A007B92B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B73BFF71FCF240A007B92B4 /* Build configuration list for PBXNativeTarget "PiedPiper-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B73BFF81FCF240A007B92B4 /* Debug */,
+				5B73BFF91FCF240A007B92B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B73BFFA1FCF240A007B92B4 /* Build configuration list for PBXNativeTarget "PiedPiper-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B73BFFB1FCF240A007B92B4 /* Debug */,
+				5B73BFFC1FCF240A007B92B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B73BFC41FCF240A007B92B4 /* Project object */;
+}
