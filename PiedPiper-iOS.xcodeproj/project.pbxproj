@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D674558EDA2506EEE4AFFD4 /* Pods_PiedPiper_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6F7A97F7B085A017D339AD /* Pods_PiedPiper_iOSTests.framework */; };
+		5B67C9851FD333ED00A6F13C /* SightingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9841FD333ED00A6F13C /* SightingListView.swift */; };
+		5B67C9871FD3438A00A6F13C /* RatSightingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9861FD3438A00A6F13C /* RatSightingCellView.swift */; };
+		5B67C9891FD3560200A6F13C /* SightingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9881FD3560200A6F13C /* SightingTableView.swift */; };
 		5B73BFD01FCF240A007B92B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFCF1FCF240A007B92B4 /* AppDelegate.swift */; };
 		5B73BFD21FCF240A007B92B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */; };
 		5B73BFD51FCF240A007B92B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B73BFD31FCF240A007B92B4 /* Main.storyboard */; };
@@ -23,6 +26,7 @@
 		5BD1777A1FCF9FFD006104BC /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */; };
 		5BD1777C1FD1100F006104BC /* RatSightingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777B1FD1100F006104BC /* RatSightingList.swift */; };
 		5BD1777E1FD11039006104BC /* RatSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777D1FD11039006104BC /* RatSighting.swift */; };
+		5BD177801FD1F051006104BC /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777F1FD1F051006104BC /* Today.swift */; };
 		D77C7848EED35B51D4FA138A /* Pods_PiedPiper_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944DB1AB6287BD81919867C3 /* Pods_PiedPiper_iOSUITests.framework */; };
 		F3469245FA06E65B55CA8B86 /* Pods_PiedPiper_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C56E9A85D6CB07A2C5F9CA /* Pods_PiedPiper_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +51,9 @@
 /* Begin PBXFileReference section */
 		27ADFF5D5AE325A04D88FE6E /* Pods-PiedPiper-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSUITests/Pods-PiedPiper-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E5941A93199EF83F0ED2BC6 /* Pods-PiedPiper-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSTests/Pods-PiedPiper-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B67C9841FD333ED00A6F13C /* SightingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingListView.swift; sourceTree = "<group>"; };
+		5B67C9861FD3438A00A6F13C /* RatSightingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatSightingCellView.swift; sourceTree = "<group>"; };
+		5B67C9881FD3560200A6F13C /* SightingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingTableView.swift; sourceTree = "<group>"; };
 		5B73BFCC1FCF240A007B92B4 /* PiedPiper-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PiedPiper-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B73BFCF1FCF240A007B92B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 		5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		5BD1777B1FD1100F006104BC /* RatSightingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatSightingList.swift; sourceTree = "<group>"; };
 		5BD1777D1FD11039006104BC /* RatSighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatSighting.swift; sourceTree = "<group>"; };
+		5BD1777F1FD1F051006104BC /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
 		944DB1AB6287BD81919867C3 /* Pods_PiedPiper_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiedPiper_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		972DF851CCD644C0E5B00971 /* Pods-PiedPiper-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSUITests/Pods-PiedPiper-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A4C56E9A85D6CB07A2C5F9CA /* Pods_PiedPiper_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiedPiper_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,8 +154,12 @@
 				5B73BFDB1FCF240A007B92B4 /* Info.plist */,
 				5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */,
 				5B73BFD31FCF240A007B92B4 /* Main.storyboard */,
+				5B67C9841FD333ED00A6F13C /* SightingListView.swift */,
+				5B67C9881FD3560200A6F13C /* SightingTableView.swift */,
+				5B67C9861FD3438A00A6F13C /* RatSightingCellView.swift */,
 				5B73BFFF1FCF2C08007B92B4 /* SpashScreenViewController.swift */,
 				5B73C0041FCF3D12007B92B4 /* RegisterViewController.swift */,
+				5BD1777F1FD1F051006104BC /* Today.swift */,
 				5B73C0061FCF4429007B92B4 /* SequeFromLeft.swift */,
 				5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */,
 				5BD1777B1FD1100F006104BC /* RatSightingList.swift */,
@@ -508,11 +520,15 @@
 			files = (
 				5BD1777E1FD11039006104BC /* RatSighting.swift in Sources */,
 				5B73BFD21FCF240A007B92B4 /* LoginViewController.swift in Sources */,
+				5B67C9891FD3560200A6F13C /* SightingTableView.swift in Sources */,
 				5B73BFD01FCF240A007B92B4 /* AppDelegate.swift in Sources */,
 				5B73C0001FCF2C08007B92B4 /* SpashScreenViewController.swift in Sources */,
+				5BD177801FD1F051006104BC /* Today.swift in Sources */,
 				5B73C0051FCF3D12007B92B4 /* RegisterViewController.swift in Sources */,
 				5B73C0071FCF4429007B92B4 /* SequeFromLeft.swift in Sources */,
 				5BD1777A1FCF9FFD006104BC /* MainScreenViewController.swift in Sources */,
+				5B67C9871FD3438A00A6F13C /* RatSightingCellView.swift in Sources */,
+				5B67C9851FD333ED00A6F13C /* SightingListView.swift in Sources */,
 				5BD1777C1FD1100F006104BC /* RatSightingList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

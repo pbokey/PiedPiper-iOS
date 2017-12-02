@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,7 +65,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="custom" identifier="login" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="mIV-XQ-etB"/>
                         <segue destination="Pgh-VG-GP0" kind="custom" identifier="registerTest" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="UPA-n5-lRT"/>
-                        <segue destination="gpo-kL-E50" kind="custom" identifier="splashMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="iBc-za-e30"/>
+                        <segue destination="WJa-hh-6gI" kind="custom" identifier="splashMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="hDc-Hm-u8v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmI-nC-W5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,7 +169,7 @@
                         <outlet property="emailTextField" destination="zP2-TA-0kG" id="mc5-Gp-xSr"/>
                         <outlet property="passwordTextField" destination="Gih-gi-qll" id="oJ2-Ah-fH0"/>
                         <segue destination="Bkb-wW-TdU" kind="custom" identifier="loginCancel" customClass="SegueFromLeft" customModule="PiedPiper_iOS" customModuleProvider="target" id="Wz9-bF-xMa"/>
-                        <segue destination="gpo-kL-E50" kind="custom" identifier="loginMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="adv-HS-bgN"/>
+                        <segue destination="WJa-hh-6gI" kind="custom" identifier="loginMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="tcq-Qe-CxP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -272,14 +273,196 @@
                         <outlet property="emailTextField" destination="G6U-bo-H4n" id="tEf-bB-1Rb"/>
                         <outlet property="passwordTextField" destination="bUL-OW-Dev" id="cSY-R8-8Kc"/>
                         <segue destination="Bkb-wW-TdU" kind="custom" identifier="registerSplash" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="UQ6-Pz-yLe"/>
-                        <segue destination="gpo-kL-E50" kind="custom" identifier="registerMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="eqk-JV-Ivq"/>
+                        <segue destination="WJa-hh-6gI" kind="custom" identifier="registerMain" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="F6Y-kB-xbH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NbU-8Q-vo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="129" y="-114"/>
         </scene>
-        <!--Main Screen View Controller-->
+        <!--Sighting List-->
+        <scene sceneID="jDU-hN-X82">
+            <objects>
+                <tableViewController title="Sighting List" id="ffp-Nz-7Yt" customClass="SightingListView" customModule="PiedPiper_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Rg-C4-gX2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RatSightingCell" id="8Pe-uV-2g5" customClass="RatSightingCellView" customModule="PiedPiper_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Pe-uV-2g5" id="fqP-xE-cMp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iD Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUL-Jj-Ifa">
+                                            <rect key="frame" x="16" y="12" width="343" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="TUL-Jj-Ifa" secondAttribute="trailing" id="8uH-Zn-rjx"/>
+                                        <constraint firstItem="TUL-Jj-Ifa" firstAttribute="leading" secondItem="fqP-xE-cMp" secondAttribute="leadingMargin" id="Zd9-gq-iaT"/>
+                                        <constraint firstItem="TUL-Jj-Ifa" firstAttribute="bottom" secondItem="fqP-xE-cMp" secondAttribute="bottomMargin" id="dMU-du-EJy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="idLabel" destination="TUL-Jj-Ifa" id="nuE-de-uxg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ffp-Nz-7Yt" id="7dz-Ii-53Q"/>
+                            <outlet property="delegate" destination="ffp-Nz-7Yt" id="M4C-DL-d6N"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableViewStoryboard" destination="2Rg-C4-gX2" id="7hU-fH-PbE"/>
+                        <segue destination="82u-4V-CHW" kind="show" identifier="detailView" id="af1-Hz-d79"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7nz-B0-EkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3140" y="-864"/>
+        </scene>
+        <!--Sighting-->
+        <scene sceneID="V1q-E4-sMJ">
+            <objects>
+                <viewController title="Sighting" id="82u-4V-CHW" customClass="SightingTableView" customModule="PiedPiper_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P4d-fk-uVh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Mxd-P1-WfY">
+                                <rect key="frame" x="15" y="64" width="360" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYf-ax-OAV" userLabel="City:">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER CITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOx-Zc-tJR" userLabel="ENTER CITY">
+                                        <rect key="frame" x="0.0" y="38" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borough:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgx-Tj-lKS" userLabel="Borough:">
+                                        <rect key="frame" x="0.0" y="76" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER BOROUGH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIl-lc-jni" userLabel="ENTER Borough">
+                                        <rect key="frame" x="0.0" y="114" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh7-Pj-PVF">
+                                        <rect key="frame" x="0.0" y="152" width="360" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER Location Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2t-fc-JNO">
+                                        <rect key="frame" x="0.0" y="189.5" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incident Zip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YV-eh-Tsd">
+                                        <rect key="frame" x="0.0" y="227.5" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER Incident Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSF-rc-9kN">
+                                        <rect key="frame" x="0.0" y="265.5" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4r-ic-Iah">
+                                        <rect key="frame" x="0.0" y="303.5" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER CREATED DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaB-Ge-M74">
+                                        <rect key="frame" x="0.0" y="341.5" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zK-fV-fMM">
+                                        <rect key="frame" x="0.0" y="379.5" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOk-Uh-IOV">
+                                        <rect key="frame" x="0.0" y="417.5" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irm-ya-JfW">
+                                        <rect key="frame" x="0.0" y="455.5" width="360" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bi-nV-L8y">
+                                        <rect key="frame" x="0.0" y="493" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unique Key:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fff-je-i7R">
+                                        <rect key="frame" x="0.0" y="531" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.43137254899999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER UNIQUE KEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb1-Yh-IuJ">
+                                        <rect key="frame" x="0.0" y="569" width="360" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mxd-P1-WfY" firstAttribute="top" secondItem="JzV-nZ-jTi" secondAttribute="top" id="1aQ-aG-5DK"/>
+                            <constraint firstItem="Mxd-P1-WfY" firstAttribute="leading" secondItem="JzV-nZ-jTi" secondAttribute="leading" constant="15" id="M9S-hA-PUV"/>
+                            <constraint firstItem="JzV-nZ-jTi" firstAttribute="bottom" secondItem="Mxd-P1-WfY" secondAttribute="bottom" id="NdJ-yD-HbR"/>
+                            <constraint firstItem="JzV-nZ-jTi" firstAttribute="trailing" secondItem="Mxd-P1-WfY" secondAttribute="trailing" id="Prz-wF-R3P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JzV-nZ-jTi"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="BOx-Zc-tJR" id="UW7-s2-M1j"/>
+                        <outlet property="enterBorough" destination="cIl-lc-jni" id="fnM-uf-7g4"/>
+                        <outlet property="enterDate" destination="kaB-Ge-M74" id="cU7-dc-aJN"/>
+                        <outlet property="enterLatitude" destination="oOk-Uh-IOV" id="Aa5-Zd-l3L"/>
+                        <outlet property="enterLocation" destination="p2t-fc-JNO" id="3JB-mJ-OeU"/>
+                        <outlet property="enterLongitude" destination="7Bi-nV-L8y" id="8In-qu-Fbz"/>
+                        <outlet property="enterUnique" destination="hb1-Yh-IuJ" id="GZp-4a-cyC"/>
+                        <outlet property="enterZip" destination="wSF-rc-9kN" id="FlE-wK-DVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DdS-p1-SaC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3957.5999999999999" y="-868.51574212893559"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="ZsL-B7-uqz">
             <objects>
                 <viewController id="gpo-kL-E50" customClass="MainScreenViewController" customModule="PiedPiper_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,12 +470,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-oc-vBi">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="PiedPiper" id="1yN-rh-tLn"/>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="2AY-dH-6J7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
@@ -303,7 +480,7 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="register:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="WJI-mY-vQl"/>
+                                            <segue destination="ffp-Nz-7Yt" kind="show" id="sdM-cu-NiI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46X-wv-9u8">
@@ -352,68 +529,47 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c9g-oc-vBi" firstAttribute="trailing" secondItem="ai6-x1-gEF" secondAttribute="trailing" id="Bj0-c6-uND"/>
+                            <constraint firstItem="2AY-dH-6J7" firstAttribute="top" secondItem="ai6-x1-gEF" secondAttribute="top" id="6Li-x2-IVz"/>
+                            <constraint firstItem="2AY-dH-6J7" firstAttribute="trailing" secondItem="ai6-x1-gEF" secondAttribute="trailing" id="Aho-iG-UCH"/>
+                            <constraint firstItem="2AY-dH-6J7" firstAttribute="leading" secondItem="ai6-x1-gEF" secondAttribute="leading" id="Dt6-rU-mjI"/>
                             <constraint firstItem="ai6-x1-gEF" firstAttribute="bottom" secondItem="2AY-dH-6J7" secondAttribute="bottom" id="JZJ-6t-Jop"/>
-                            <constraint firstItem="c9g-oc-vBi" firstAttribute="leading" secondItem="ai6-x1-gEF" secondAttribute="leading" id="jyS-Xp-HCO"/>
-                            <constraint firstItem="c9g-oc-vBi" firstAttribute="top" secondItem="ai6-x1-gEF" secondAttribute="top" id="mfx-PE-sdZ"/>
                             <constraint firstItem="2AY-dH-6J7" firstAttribute="leading" secondItem="ai6-x1-gEF" secondAttribute="leading" id="oDC-PG-2R7"/>
+                            <constraint firstItem="2AY-dH-6J7" firstAttribute="bottom" secondItem="ai6-x1-gEF" secondAttribute="bottom" id="sTf-ly-qtk"/>
                             <constraint firstItem="ai6-x1-gEF" firstAttribute="trailing" secondItem="2AY-dH-6J7" secondAttribute="trailing" id="u5d-6U-Pmv"/>
-                            <constraint firstItem="2AY-dH-6J7" firstAttribute="top" secondItem="c9g-oc-vBi" secondAttribute="bottom" id="ygk-T4-Yj2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ai6-x1-gEF"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="S3g-aO-jP1"/>
                     <connections>
                         <segue destination="Bkb-wW-TdU" kind="custom" identifier="logout" customClass="SegueFromLeft" customModule="PiedPiper_iOS" customModuleProvider="target" id="Iwc-PT-mBQ"/>
-                        <segue destination="Sby-IJ-gDX" kind="custom" identifier="mainToList" customClass="SequeFromRight" customModule="PiedPiper_iOS" customModuleProvider="target" id="vSd-wa-UI3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRC-zF-mTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="142.57871064467767"/>
+            <point key="canvasLocation" x="2354" y="143"/>
         </scene>
-        <!--Sighting Map View-->
-        <scene sceneID="ks6-Xj-zbF">
+        <!--Navigation Controller-->
+        <scene sceneID="XMb-wJ-YXk">
             <objects>
-                <viewController id="Sby-IJ-gDX" customClass="SightingMapView" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vz3-d8-5cY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Zx-DH-Fbf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VOd-5E-jBT">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VOd-5E-jBT" id="zkE-Be-fiA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="2Zx-DH-Fbf" firstAttribute="bottom" secondItem="ZLM-nj-3nE" secondAttribute="bottom" id="RPL-Bq-PHi"/>
-                            <constraint firstItem="2Zx-DH-Fbf" firstAttribute="top" secondItem="ZLM-nj-3nE" secondAttribute="top" id="YhA-Ih-idN"/>
-                            <constraint firstAttribute="trailing" secondItem="2Zx-DH-Fbf" secondAttribute="trailing" id="cKP-id-wz2"/>
-                            <constraint firstItem="2Zx-DH-Fbf" firstAttribute="leading" secondItem="Vz3-d8-5cY" secondAttribute="leading" id="x7K-uz-vO6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZLM-nj-3nE"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zga-0r-lsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="WJa-hh-6gI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TFC-8U-kK4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gpo-kL-E50" kind="relationship" relationship="rootViewController" id="AYU-v0-klp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buL-e4-nSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863.2" y="-794.75262368815595"/>
+            <point key="canvasLocation" x="1398" y="143"/>
         </scene>
     </scenes>
     <resources>
         <image name="pied-piper-logo-CEFC2E0237-seeklogo.com.png" width="200" height="193"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iBc-za-e30"/>
+        <segue reference="tcq-Qe-CxP"/>
         <segue reference="Iwc-PT-mBQ"/>
     </inferredMetricsTieBreakers>
 </document>

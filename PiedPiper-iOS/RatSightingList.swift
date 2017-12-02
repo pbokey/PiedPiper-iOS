@@ -11,12 +11,13 @@ import Firebase
 import FirebaseDatabase
 
 class RatSightingList {
-    var sightingList: [RatSighting] = []
+    var sightingList = [RatSighting]()
     
-    public func databaseListUpdate() {
+    public func databaseListUpdate(callback: @escaping ((_ data: [RatSighting]) -> Void)) {
         let ref: DatabaseReference = Database.database().reference().child("sightings")
         ref.queryLimited(toFirst: 500).observeSingleEvent(of: .value, with:     { (snapshot) in
             print(snapshot.childrenCount)
+            var result = [RatSighting]()
             let enumerator = snapshot.children
             while let sighting = enumerator.nextObject() as? DataSnapshot {
                 let sightingDict = sighting.value as! NSDictionary
@@ -29,9 +30,9 @@ class RatSightingList {
                 let locationType = sightingDict["Location Type"] as! String
                 let longitude = sightingDict["Longitude"] as! String
                 let uniqueKey = sightingDict["Unique Key"] as! String
-                self.sightingList.append(RatSighting(uniqueKey: uniqueKey, createdDate: createdDate, locationType: locationType, incidentZip: incidentZip, incidentAddress: incidentAddress, city: city, borough: borough, latitude: latitude, longitude: longitude))
+                result.append(RatSighting(uniqueKey: uniqueKey, createdDate: createdDate, locationType: locationType, incidentZip: incidentZip, incidentAddress: incidentAddress, city: city, borough: borough, latitude: latitude, longitude: longitude))
             }
+            callback(result)
         })
     }
-    
 }

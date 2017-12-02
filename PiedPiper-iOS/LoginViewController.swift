@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: self.emailTextField.text!, password: passwordTextField.text!) { (user, error) in
                 let ref: DatabaseReference = Database.database().reference()
                 ref.child("Log").removeValue()
-                let today = self.getTodayString()
+                let today = DateTime.getTodayString()
                 let username = self.emailTextField.text!.components(separatedBy: "@")[0]
                 if (error == nil) {
                     print("You have logged in")
@@ -52,25 +52,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func getTodayString() -> String{
-        
-        let date = Date()
-        let calender = Calendar.current
-        let components = calender.dateComponents([.year,.month,.day,.hour,.minute,.second], from: date)
-        
-        let year = components.year
-        let month = components.month
-        let day = components.day
-        let hour = components.hour
-        let minute = components.minute
-        let second = components.second
-        
-        let today_string = String(year!) + "-" + String(month!) + "-" + String(day!) + " " + String(hour!)  + ":" + String(minute!) + ":" +  String(second!)
-        
-        return today_string
-        
-    }
-    
     @IBAction func cancelButton(_ sender: Any) {
         performSegue(withIdentifier: "loginCancel", sender: sender)
     }
@@ -82,7 +63,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let ref: DatabaseReference = Database.database().reference()
-        ref.child("test").child("testing").setValue("it worked")
+        ref.child("log").removeValue()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

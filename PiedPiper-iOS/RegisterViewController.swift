@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class RegisterViewController: UIViewController {
     
@@ -31,11 +32,16 @@ class RegisterViewController: UIViewController {
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
                 if (error == nil) {
                     print("You have Registered")
+                    let username = self.emailTextField.text!.components(separatedBy: "@")[0]
 //                    let alertController = UIAlertController(title: "Success", message: "Successfuly Registered", preferredStyle: .alert)
 //                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
 //                    alertController.addAction(defaultAction)
 //                    self.present(alertController, animated: true, completion: nil)
+                    let ref = Database.database().reference().child("Log")
+                    let today = DateTime.getTodayString()
+                    ref.child("\(today)").setValue("\(username): succesfuly registered")
                     self.performSegue(withIdentifier: "registerMain", sender: nil)
+                    return
                     //main menu seque here
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error.debugDescription, preferredStyle: .alert)
@@ -49,6 +55,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func goToSplash(_ sender: Any) {
         performSegue(withIdentifier: "registerSplash", sender: sender)
+        return
     }
     
     override func viewDidLoad() {
