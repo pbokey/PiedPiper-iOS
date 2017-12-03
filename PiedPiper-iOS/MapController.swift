@@ -24,8 +24,6 @@ class MapController: UIViewController {
             let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
             self.view = mapView
             for item in self.sightingList {
-                print(item.latitude)
-                print(item.longitude)
                 let lat = Double(item.latitude)
                 let lon = Double(item.longitude)
                 if (lat != nil && lon != nil) {
