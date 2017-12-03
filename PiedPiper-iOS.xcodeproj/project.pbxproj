@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D674558EDA2506EEE4AFFD4 /* Pods_PiedPiper_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6F7A97F7B085A017D339AD /* Pods_PiedPiper_iOSTests.framework */; };
+		5B168D591FD4BAD800EF504B /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B168D581FD4BAD800EF504B /* GraphViewController.swift */; };
 		5B67C9851FD333ED00A6F13C /* SightingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9841FD333ED00A6F13C /* SightingListView.swift */; };
 		5B67C9871FD3438A00A6F13C /* RatSightingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9861FD3438A00A6F13C /* RatSightingCellView.swift */; };
 		5B67C9891FD3560200A6F13C /* SightingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9881FD3560200A6F13C /* SightingTableView.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		27ADFF5D5AE325A04D88FE6E /* Pods-PiedPiper-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSUITests/Pods-PiedPiper-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E5941A93199EF83F0ED2BC6 /* Pods-PiedPiper-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSTests/Pods-PiedPiper-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B168D581FD4BAD800EF504B /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		5B67C9841FD333ED00A6F13C /* SightingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingListView.swift; sourceTree = "<group>"; };
 		5B67C9861FD3438A00A6F13C /* RatSightingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatSightingCellView.swift; sourceTree = "<group>"; };
 		5B67C9881FD3560200A6F13C /* SightingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingTableView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				5B73BFDB1FCF240A007B92B4 /* Info.plist */,
 				5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */,
 				5B73BFD31FCF240A007B92B4 /* Main.storyboard */,
+				5B168D581FD4BAD800EF504B /* GraphViewController.swift */,
 				5B67C98B1FD395EF00A6F13C /* CreateRatSightingController.swift */,
 				5B67C9841FD333ED00A6F13C /* SightingListView.swift */,
 				5B67C9881FD3560200A6F13C /* SightingTableView.swift */,
@@ -544,6 +547,7 @@
 				B35DA2881FD3727800E876FA /* MapController.swift in Sources */,
 				5B73BFD21FCF240A007B92B4 /* LoginViewController.swift in Sources */,
 				5B67C9891FD3560200A6F13C /* SightingTableView.swift in Sources */,
+				5B168D591FD4BAD800EF504B /* GraphViewController.swift in Sources */,
 				5B73BFD01FCF240A007B92B4 /* AppDelegate.swift in Sources */,
 				5B73C0001FCF2C08007B92B4 /* SpashScreenViewController.swift in Sources */,
 				5BD177801FD1F051006104BC /* Today.swift in Sources */,
