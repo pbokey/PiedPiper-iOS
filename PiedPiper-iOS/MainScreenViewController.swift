@@ -26,6 +26,7 @@ class MainScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: false)
         // Do any additional setup after loading the view, typically from a nib.
 //        let database = RatSightingList()
 //        database.databaseListUpdate { (arr) in
