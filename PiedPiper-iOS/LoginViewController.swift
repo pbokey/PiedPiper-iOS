@@ -32,7 +32,6 @@ class LoginViewController: UIViewController {
         } else {
             Auth.auth().signIn(withEmail: self.emailTextField.text!, password: passwordTextField.text!) { (user, error) in
                 let ref: DatabaseReference = Database.database().reference()
-                ref.child("Log").removeValue()
                 let today = DateTime.getTodayString()
                 let username = self.emailTextField.text!.components(separatedBy: "@")[0]
                 if (error == nil) {

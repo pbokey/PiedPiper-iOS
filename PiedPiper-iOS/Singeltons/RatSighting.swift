@@ -30,4 +30,8 @@ class RatSighting {
         self.latitude = latitude
         self.longitude = longitude
     }
+    
+    public func setKey(key: String) -> Void {
+        self.uniqueKey = key
+    }
 }

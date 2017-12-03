@@ -15,7 +15,7 @@ class RatSightingList {
     
     public func databaseListUpdate(callback: @escaping ((_ data: [RatSighting]) -> Void)) {
         let ref: DatabaseReference = Database.database().reference().child("sightings")
-        ref.queryLimited(toFirst: 500).observeSingleEvent(of: .value, with:     { (snapshot) in
+        ref.queryLimited(toLast: 500).observeSingleEvent(of: .value, with:     { (snapshot) in
             print(snapshot.childrenCount)
             var result = [RatSighting]()
             let enumerator = snapshot.children

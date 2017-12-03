@@ -11,6 +11,7 @@
 		5B67C9851FD333ED00A6F13C /* SightingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9841FD333ED00A6F13C /* SightingListView.swift */; };
 		5B67C9871FD3438A00A6F13C /* RatSightingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9861FD3438A00A6F13C /* RatSightingCellView.swift */; };
 		5B67C9891FD3560200A6F13C /* SightingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C9881FD3560200A6F13C /* SightingTableView.swift */; };
+		5B67C98C1FD395EF00A6F13C /* CreateRatSightingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B67C98B1FD395EF00A6F13C /* CreateRatSightingController.swift */; };
 		5B73BFD01FCF240A007B92B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFCF1FCF240A007B92B4 /* AppDelegate.swift */; };
 		5B73BFD21FCF240A007B92B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */; };
 		5B73BFD51FCF240A007B92B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B73BFD31FCF240A007B92B4 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		5B67C9841FD333ED00A6F13C /* SightingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingListView.swift; sourceTree = "<group>"; };
 		5B67C9861FD3438A00A6F13C /* RatSightingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatSightingCellView.swift; sourceTree = "<group>"; };
 		5B67C9881FD3560200A6F13C /* SightingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingTableView.swift; sourceTree = "<group>"; };
+		5B67C98B1FD395EF00A6F13C /* CreateRatSightingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRatSightingController.swift; sourceTree = "<group>"; };
 		5B73BFCC1FCF240A007B92B4 /* PiedPiper-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PiedPiper-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B73BFCF1FCF240A007B92B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5B67C98A1FD392E200A6F13C /* Singeltons */ = {
+			isa = PBXGroup;
+			children = (
+				5BD1777F1FD1F051006104BC /* Today.swift */,
+				5B73C0061FCF4429007B92B4 /* SequeFromLeft.swift */,
+				5BD1777B1FD1100F006104BC /* RatSightingList.swift */,
+				5BD1777D1FD11039006104BC /* RatSighting.swift */,
+			);
+			path = Singeltons;
+			sourceTree = "<group>";
+		};
 		5B73BFC31FCF240A007B92B4 = {
 			isa = PBXGroup;
 			children = (
@@ -152,24 +165,22 @@
 		5B73BFCE1FCF240A007B92B4 /* PiedPiper-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5B67C98A1FD392E200A6F13C /* Singeltons */,
 				5B73C0081FCF44A7007B92B4 /* Useless */,
 				5B73C0031FCF2D28007B92B4 /* Images */,
 				5B73BFCF1FCF240A007B92B4 /* AppDelegate.swift */,
 				5B73BFDB1FCF240A007B92B4 /* Info.plist */,
 				5B73BFD11FCF240A007B92B4 /* LoginViewController.swift */,
 				5B73BFD31FCF240A007B92B4 /* Main.storyboard */,
+				5B67C98B1FD395EF00A6F13C /* CreateRatSightingController.swift */,
 				5B67C9841FD333ED00A6F13C /* SightingListView.swift */,
 				5B67C9881FD3560200A6F13C /* SightingTableView.swift */,
 				5B67C9861FD3438A00A6F13C /* RatSightingCellView.swift */,
 				5B73BFFF1FCF2C08007B92B4 /* SpashScreenViewController.swift */,
 				5B73C0041FCF3D12007B92B4 /* RegisterViewController.swift */,
-				5BD1777F1FD1F051006104BC /* Today.swift */,
-				5B73C0061FCF4429007B92B4 /* SequeFromLeft.swift */,
 				5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */,
 				B35DA2871FD3727800E876FA /* MapController.swift */,
 				B35DA2891FD3728800E876FA /* MapView.swift */,
-				5BD1777B1FD1100F006104BC /* RatSightingList.swift */,
-				5BD1777D1FD11039006104BC /* RatSighting.swift */,
 			);
 			path = "PiedPiper-iOS";
 			sourceTree = "<group>";
@@ -529,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD1777E1FD11039006104BC /* RatSighting.swift in Sources */,
+				5B67C98C1FD395EF00A6F13C /* CreateRatSightingController.swift in Sources */,
 				B35DA2881FD3727800E876FA /* MapController.swift in Sources */,
 				5B73BFD21FCF240A007B92B4 /* LoginViewController.swift in Sources */,
 				5B67C9891FD3560200A6F13C /* SightingTableView.swift in Sources */,
