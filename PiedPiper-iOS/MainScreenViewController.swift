@@ -13,7 +13,7 @@ import FirebaseAuth
 
 class MainScreenViewController: UIViewController {
     
-//    public var sightingList: [RatSighting] = []
+    public var sightingList = [RatSighting]()
     
     @IBAction func logout(_ sender: Any) {
         if let _ = try? Auth.auth().signOut() {
@@ -27,6 +27,11 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        let database = RatSightingList()
+//        database.databaseListUpdate { (arr) in
+//            print(arr.count)
+//            self.sightingList = arr
+//        }
     }
     
     override func didReceiveMemoryWarning() {
