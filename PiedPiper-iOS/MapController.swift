@@ -12,6 +12,7 @@ import GoogleMaps
 class MapController: UIViewController {
     
     override func loadView() {
+        super.loadView()
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
         //var mapView = MapView(frame: <#T##CGRect#>(x: 0, y: 0))
@@ -25,6 +26,15 @@ class MapController: UIViewController {
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = mapView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadView()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
 }
