@@ -59,7 +59,6 @@ class LoginViewController: UIViewController {
     
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let ref: DatabaseReference = Database.database().reference()

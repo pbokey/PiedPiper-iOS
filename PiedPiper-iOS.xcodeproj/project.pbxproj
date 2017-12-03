@@ -27,6 +27,8 @@
 		5BD1777C1FD1100F006104BC /* RatSightingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777B1FD1100F006104BC /* RatSightingList.swift */; };
 		5BD1777E1FD11039006104BC /* RatSighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777D1FD11039006104BC /* RatSighting.swift */; };
 		5BD177801FD1F051006104BC /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777F1FD1F051006104BC /* Today.swift */; };
+		B35DA2881FD3727800E876FA /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35DA2871FD3727800E876FA /* MapController.swift */; };
+		B35DA28A1FD3728800E876FA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35DA2891FD3728800E876FA /* MapView.swift */; };
 		D77C7848EED35B51D4FA138A /* Pods_PiedPiper_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944DB1AB6287BD81919867C3 /* Pods_PiedPiper_iOSUITests.framework */; };
 		F3469245FA06E65B55CA8B86 /* Pods_PiedPiper_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C56E9A85D6CB07A2C5F9CA /* Pods_PiedPiper_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +82,8 @@
 		972DF851CCD644C0E5B00971 /* Pods-PiedPiper-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSUITests/Pods-PiedPiper-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A4C56E9A85D6CB07A2C5F9CA /* Pods_PiedPiper_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiedPiper_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C1BEE04CBF9F18B44A5311 /* Pods-PiedPiper-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSTests/Pods-PiedPiper-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B35DA2871FD3727800E876FA /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		B35DA2891FD3728800E876FA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D06428A334C420059D3FEEBE /* Pods-PiedPiper-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DC6F7A97F7B085A017D339AD /* Pods_PiedPiper_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiedPiper_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8CB02BC91C3779F97B3D6F /* Pods-PiedPiper-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				5BD1777F1FD1F051006104BC /* Today.swift */,
 				5B73C0061FCF4429007B92B4 /* SequeFromLeft.swift */,
 				5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */,
+				B35DA2871FD3727800E876FA /* MapController.swift */,
+				B35DA2891FD3728800E876FA /* MapView.swift */,
 				5BD1777B1FD1100F006104BC /* RatSightingList.swift */,
 				5BD1777D1FD11039006104BC /* RatSighting.swift */,
 			);
@@ -469,9 +475,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -519,11 +529,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD1777E1FD11039006104BC /* RatSighting.swift in Sources */,
+				B35DA2881FD3727800E876FA /* MapController.swift in Sources */,
 				5B73BFD21FCF240A007B92B4 /* LoginViewController.swift in Sources */,
 				5B67C9891FD3560200A6F13C /* SightingTableView.swift in Sources */,
 				5B73BFD01FCF240A007B92B4 /* AppDelegate.swift in Sources */,
 				5B73C0001FCF2C08007B92B4 /* SpashScreenViewController.swift in Sources */,
 				5BD177801FD1F051006104BC /* Today.swift in Sources */,
+				B35DA28A1FD3728800E876FA /* MapView.swift in Sources */,
 				5B73C0051FCF3D12007B92B4 /* RegisterViewController.swift in Sources */,
 				5B73C0071FCF4429007B92B4 /* SequeFromLeft.swift in Sources */,
 				5BD1777A1FCF9FFD006104BC /* MainScreenViewController.swift in Sources */,
@@ -697,7 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3QQZM4A6V6;
+				DEVELOPMENT_TEAM = LC67RCKQ9A;
 				INFOPLIST_FILE = "PiedPiper-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pranavbokey.PiedPiper-iOS";
@@ -713,7 +725,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3QQZM4A6V6;
+				DEVELOPMENT_TEAM = LC67RCKQ9A;
 				INFOPLIST_FILE = "PiedPiper-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pranavbokey.PiedPiper-iOS";

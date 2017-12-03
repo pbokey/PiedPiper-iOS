@@ -14,6 +14,10 @@ import FirebaseAuth
 class MainScreenViewController: UIViewController {
     
 //    public var sightingList: [RatSighting] = []
+    @IBAction func mapButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+        present(MapController(), animated: true, completion: nil)
+    }
     
     @IBAction func logout(_ sender: Any) {
         if let _ = try? Auth.auth().signOut() {
@@ -23,7 +27,10 @@ class MainScreenViewController: UIViewController {
         }
     }
 
-    
+//    @IBAction func showMap(_sender: Any) {
+//        dismiss(animated: true, completion: nil)
+//        present(MapController, true, nil)
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,4 +40,5 @@ class MainScreenViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }
