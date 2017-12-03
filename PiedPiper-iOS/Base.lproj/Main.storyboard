@@ -490,7 +490,7 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="register:" destination="Pgh-VG-GP0" eventType="touchUpInside" id="ehb-WP-gs3"/>
+                                            <action selector="mapButton:" destination="gpo-kL-E50" eventType="touchUpInside" id="noq-ve-TaN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSg-5f-PPH">
@@ -541,6 +541,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="S3g-aO-jP1"/>
                     <connections>
+                        <outlet property="mapButton" destination="46X-wv-9u8" id="2sX-A0-q7E"/>
                         <segue destination="Bkb-wW-TdU" kind="custom" identifier="logout" customClass="SegueFromLeft" customModule="PiedPiper_iOS" customModuleProvider="target" id="Iwc-PT-mBQ"/>
                     </connections>
                 </viewController>
@@ -569,7 +570,7 @@
         <image name="pied-piper-logo-CEFC2E0237-seeklogo.com.png" width="200" height="193"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tcq-Qe-CxP"/>
+        <segue reference="hDc-Hm-u8v"/>
         <segue reference="Iwc-PT-mBQ"/>
     </inferredMetricsTieBreakers>
 </document>
