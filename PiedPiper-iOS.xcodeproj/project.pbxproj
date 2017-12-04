@@ -31,6 +31,7 @@
 		5BD177801FD1F051006104BC /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1777F1FD1F051006104BC /* Today.swift */; };
 		B35DA2881FD3727800E876FA /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35DA2871FD3727800E876FA /* MapController.swift */; };
 		B35DA28A1FD3728800E876FA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35DA2891FD3728800E876FA /* MapView.swift */; };
+		CDB1D2951FD51259001FCEEA /* BarChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1D2941FD51259001FCEEA /* BarChartFormatter.swift */; };
 		D77C7848EED35B51D4FA138A /* Pods_PiedPiper_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944DB1AB6287BD81919867C3 /* Pods_PiedPiper_iOSUITests.framework */; };
 		F3469245FA06E65B55CA8B86 /* Pods_PiedPiper_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C56E9A85D6CB07A2C5F9CA /* Pods_PiedPiper_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,7 @@
 		A7C1BEE04CBF9F18B44A5311 /* Pods-PiedPiper-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOSTests/Pods-PiedPiper-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B35DA2871FD3727800E876FA /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		B35DA2891FD3728800E876FA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CDB1D2941FD51259001FCEEA /* BarChartFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartFormatter.swift; sourceTree = "<group>"; };
 		D06428A334C420059D3FEEBE /* Pods-PiedPiper-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DC6F7A97F7B085A017D339AD /* Pods_PiedPiper_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PiedPiper_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8CB02BC91C3779F97B3D6F /* Pods-PiedPiper-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PiedPiper-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				5BD177791FCF9FFD006104BC /* MainScreenViewController.swift */,
 				B35DA2871FD3727800E876FA /* MapController.swift */,
 				B35DA2891FD3728800E876FA /* MapView.swift */,
+				CDB1D2941FD51259001FCEEA /* BarChartFormatter.swift */,
 			);
 			path = "PiedPiper-iOS";
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PiedPiper-iOS/Pods-PiedPiper-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -428,6 +432,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -552,6 +557,7 @@
 				5B73C0001FCF2C08007B92B4 /* SpashScreenViewController.swift in Sources */,
 				5BD177801FD1F051006104BC /* Today.swift in Sources */,
 				B35DA28A1FD3728800E876FA /* MapView.swift in Sources */,
+				CDB1D2951FD51259001FCEEA /* BarChartFormatter.swift in Sources */,
 				5B73C0051FCF3D12007B92B4 /* RegisterViewController.swift in Sources */,
 				5B73C0071FCF4429007B92B4 /* SequeFromLeft.swift in Sources */,
 				5BD1777A1FCF9FFD006104BC /* MainScreenViewController.swift in Sources */,
