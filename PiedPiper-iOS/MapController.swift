@@ -18,11 +18,11 @@ class MapController: UIViewController {
         // coordinate -33.86,151.20 at zoom level 6.
         // var mapView = MapView(frame: <#T##CGRect#>(x: 0, y: 0))
         let list = RatSightingList()
+        let camera = GMSCameraPosition.camera(withLatitude: 40.7831, longitude: -73.9712, zoom: 10.0)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        self.view = mapView
         list.databaseListUpdate { (arr) in
             self.sightingList = arr
-            let camera = GMSCameraPosition.camera(withLatitude: Double(self.sightingList[0].latitude)!, longitude: Double(self.sightingList[0].longitude)!, zoom: 10.0)
-            let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-            self.view = mapView
             for item in self.sightingList {
                 let lat = Double(item.latitude)
                 let lon = Double(item.longitude)
